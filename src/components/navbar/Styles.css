@@ -1,0 +1,37 @@
+.container-navbar {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-search {
+    display: inline-flex;
+    margin: auto 0px;
+}
+
+input {
+    margin: auto 8px;
+    padding: 3px;
+}
+
+.search-button {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    font-size: 0px;
+}
+
+.search-button:hover {
+    background-color: #868686;
+    border: 1px solid #868686;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}

@@ -9,19 +9,23 @@ import Search from './paginas/search/Search.jsx'
 import Movie from './paginas/movie/Movie.jsx'
 const router = createBrowserRouter([
   {
-    path: "App",
-    element: <App />,
-  },
-  {
-    path: "/Home",
+    path: "/",
     element: <Home />,
   },
   {
-    path: "/Search",
+    path: "/home",
+    element: <Home />,
+  },
+  {
+    path: "/app",
+    element: <App />,
+  },
+  {
+    path: "/search",
     element: <Search />,
   },
   {
-    path: "/Movie/:id",
+    path: "/movie/:id",
     element: <Movie />,
   },
 ])

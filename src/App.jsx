@@ -9,7 +9,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='cadastro-container'>
       <h1>Hello World</h1>
       <button onClick={homePag}>Ir para Home</button>
     </div>

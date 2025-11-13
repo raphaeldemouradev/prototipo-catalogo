@@ -3,9 +3,10 @@ import Navbar from "../../components/navbar/Navbar";
 import BottomNav from "../../components/bottomNav/BottomNav";
 import { useEffect, useState } from "react";
 import MovieCard from "../../components/movie-card/MovieCard";
+import "./StylesHome.css"
 
-  const moviesURL = import.meta.env.VITE_API;
-  const apiKey = import.meta.env.VITE_API_KEY;
+  const moviesURL = import.meta.env.VITE_API; // maquina
+  const apiKey = import.meta.env.VITE_API_KEY; // chave
 
 function Home() {
     const navigate = useNavigate();
@@ -18,7 +19,7 @@ function Home() {
       const res = await fetch(url);
       const data = await res.json();
 
-      setMovies(data.results);
+      setMovies(data.results); //results são os filmes
     };
 
     useEffect(() => {
@@ -30,7 +31,8 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <div>
+
+      <div className="grid-film">
         {topMovies && topMovies.map((movie) => <MovieCard movie={movie} />)}
       </div>
 
